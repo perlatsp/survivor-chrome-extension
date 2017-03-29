@@ -1,8 +1,16 @@
 {
   "name": "SurvivorKiller",
   "description": "Hide Greek TV show 'Survivor' posts form Facebook.",
-  "version": "1",
+  "version": "1.0.1",
+  "version_name": "onetuthri",
+  "homepage_url": "https://github.com/perlatsp/survivor-chrome-extension",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "manifest_version": 2,
+  "permissions": ["<all_urls>", "storage","tabs"],
   "content_scripts": [
     {
       "matches": [
@@ -10,9 +18,15 @@
         "https://www.facebook.com/*"
       ],
       "js": [
-        "jquery.min.js",
+        "inc/js/jquery.min.js",
         "script.js"
       ]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_icon": "icon.png" ,
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
 }
+

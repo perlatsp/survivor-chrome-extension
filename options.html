@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SurviorKiller Options</title>
+  <link rel="stylesheet" href="inc/css/bootstrap.min.css">
+
+</head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-md-offset-3">
+      <h2 class="text-center">SurvivorKiller</h2>
+      <p class="text-center"><img src="icon.png" alt=""></p>
+      <div class="form-group">
+        <label for="dictionary">Dictionary:</label>
+        <textarea class="form-control" rows="5" cols="5" id="dictionary">
+          survivor,τσανκ,κινέζος,Ορέστης,αγώνισμα,Ορέστης,Σάρα,Τσανγκ,Μισθοφόρος,Λάουρα,Σπαλιάρας,Σπαλ,Χρανιώλα,Χρανιώτης,ΜΠΟ,Ασυλία,Κολιδά,Μαχητές,Αγγελόπουλος,Βαλαβάνη,orestis,Ελισάβετ,ΒΑΛΑΒΑΝΗ
+        </textarea>
+      </div>
+      <div class="form-group">
+        <button id="save" class="btn btn-primary">Save</button>
+        <button id="reset" class="btn btn-warning">Reset</button>
+      </div>
+      <div id="status"></div>
+    </div>
+  </div>
+</div>
+<div style="position: relative;bottom: 0;" class="text-center">
+  <div class="text-center text-muted">
+    SurvivorKiller is a Chrome extension that finds and terminates Survivor (Greek TV show) posts. <br>
+     <a href="https://github.com/perlatsp/survivor-chrome-extension">survivor-chrome-extension</a> By <a href="http://github.com/perlatsp">perlatsp</a>
+    <br>
+    Forked from <a href="http://github.com/tkorakas">tkorakas</a>'s <a href="https://github.com/tkorakas/survivor-chrome-extension">survivor-chrome-extension</a>
+  </div>
+</div>
+<script src="/inc/js/jquery.min.js"></script>
+<script src="/script.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
